@@ -461,3 +461,44 @@ footer {
   display: none;
 }
 
+/* Media query pour telephone  */
+@media (max-width: 768px) {
+  .player {
+    margin: 5vmin;
+  }
+
+  .connected, .ready {
+    font-size: 14px;
+  }
+
+  .connected.active,
+  .ready.active {
+    font-size: 16px;
+  }
+
+  .grid-original {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Media query pour tablette  */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .player {
+    margin: 3vmin;
+  }
+
+  .connected, .ready {
+    font-size: 16px;
+  }
+
+  .connected.active,
+  .ready.active {
+    font-size: 18px;
+  }
+
+  .grid-original {
+    display: block;
+    width: 80%;
+  }
+}
