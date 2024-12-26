@@ -171,85 +171,33 @@
         .footer-icons a:hover {
             color: #ccc;
         }       
-        /* Media query pour telephone */ 
-        @media (max-width: 768px) {
-            .news-carousel {
-                width: 100%;
-                height: auto;
-                margin: 50px auto;
-            }
-        
-            .news-card {
-                flex-direction: column;
-                padding: 10px;
-                max-width: 100%;
-            }
-        
-            .news-card img {
-                width: 100%;
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-        
-            .news-card .content {
-                width: 100%;
-            }
-        
-            .navbar a {
-                font-size: 16px;
-                margin: 0 5px;
-            }
-        
-            .navbar .nav-link:hover {
-                font-size: 18px;
-            }
-        
-            body::before {
-                background-size: contain;
-                filter: blur(5px);
-            }
-        
-            .card {
-                border-radius: 10px;
-                padding: 10px;
-            }
-        
-            .footer-icons {
-                gap: 10px;
-            }
-        
-            .footer-icons a {
-                font-size: 1.2rem;
-                margin-left: 2px;
-            }
-        }
-        /* Media query pour tablette */ 
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .navbar a {
-                font-size: 17px;
-                margin: 0 8px;
-            }
-        
-            .navbar .nav-link:hover {
-                font-size: 19px;
-            }
-        
-            body::before {
-                background-size: cover;
-                filter: blur(8px);
-            }
-        
-            .card {
-                border-radius: 12px;
-                padding: 15px;
-            }
-        
-            .footer-icons {
-                gap: 15px;
-            }
-        
-            .footer-icons a {
-                font-size: 1.4rem;
-                margin-left: 3px;
-            }
-        }
+ /* Media queries */
+@media (max-width: 768px) {
+    .news-carousel {
+        width: 100%;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .news-card {
+        flex-direction: column;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .news-card img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .news-card {
+        padding: 15px;
+    }
+
+    .footer-icons a {
+        font-size: 1.4rem;
+    }
+}

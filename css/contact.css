@@ -1,4 +1,4 @@
-        html, body {
+    html, body {
         height: 100%;
         margin: 0;
         display: flex;
@@ -148,46 +148,36 @@
     .footer-icons a:hover {
         color: #ccc;
     }
-    /* Media query pour telephone */
 @media (max-width: 768px) {
-    .navbar a {
-        font-size: 16px;
-        margin: 0 5px;
+        .navbar a {
+            font-size: 16px;
+            margin: 0 5px;
+        }
+    
+        form {
+            padding: 10px;
+            width: 100%;
+        }
+    
+        .footer-icons a {
+            font-size: 1.2rem;
+            margin-left: 2px;
+        }
     }
-
-    .navbar .nav-link:hover {
-        font-size: 18px;
-    }
-
-    body::before {
-        background-size: contain;
-        filter: blur(5px);
-    }
-
-    form {
-        padding: 10px;
-        width: 100%;
-    }
-}
-
-/* Media query pour tablette */
+    
 @media (min-width: 769px) and (max-width: 1024px) {
-    .navbar a {
-        font-size: 17px;
-        margin: 0 8px;
+        .navbar a {
+            font-size: 17px;
+            margin: 0 8px;
+        }
+    
+        form {
+            padding: 20px;
+            width: 80%;
+        }
+    
+        .footer-icons a {
+            font-size: 1.4rem;
+            margin-left: 3px;
+        }
     }
-
-    .navbar .nav-link:hover {
-        font-size: 19px;
-    }
-
-    body::before {
-        background-size: cover;
-        filter: blur(8px);
-    }
-
-    form {
-        padding: 20px;
-        width: 80%;
-    }
-}
