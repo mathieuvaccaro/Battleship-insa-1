@@ -1,0 +1,174 @@
+        .news-carousel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 100px auto;
+            width: 80%;
+            height: 400px; /* Hauteur fixe pour éviter les sauts de mise en page */
+            position: relative;
+        }
+
+        .news-card {
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.2); /* Fond noir transparent */
+            /*background: #000; Enlever peut etre ?*    */
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            text-align: left;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform: translateX(100%);
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+
+        .news-card img {
+            width: 40%;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .news-card .content {
+            flex: 1;
+        }
+
+        .news-card.active {
+            opacity: 1;
+            transform: translateX(0);
+            position: relative;
+        }
+
+        .news-card.slide-out-left {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        .news-card.slide-out-right {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        .news-card.slide-in-left {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        .news-card.slide-in-right {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        .carousel-button {
+            background: none;
+            border: none;
+            font-size: 4rem;
+            color: #000;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            transition: color 0.3s;
+        }
+
+        .carousel-button:hover {
+            color: #0056b3;
+        }
+
+        .carousel-button.left {
+            margin-left: -70%;
+        }
+
+        .carousel-button.right {
+            margin-right: -70%;
+        }
+
+        .carousel-button:focus {
+            outline: none;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            color: #000;
+        }
+
+        .navbar .nav-link:hover {
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../images/fond.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px);
+            z-index: -1;
+            transform: scale(1.1);
+        }
+        footer {
+            margin-top: auto;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 15px 0;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .footer-mentions {
+            text-alig:center;
+        }
+
+        .footer-icons {
+            gap: 20px;
+        }
+
+        .footer-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-left: 5px;
+            transition: color 0.3s;
+        }
+
+        .footer-icons a:hover {
+            color: #ccc;
+        }
