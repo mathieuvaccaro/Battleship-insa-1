@@ -148,7 +148,7 @@
     .footer-icons a:hover {
         color: #ccc;
     }
-/* Media query for mobile devices */
+/* Media query for mobile devices *
 @media (max-width: 768px) {
     .navbar a {
         font-size: 16px;
@@ -170,7 +170,7 @@
     }
 }
 
-/* Media query for tablets */
+/* Media query for tablets /
 @media (min-width: 769px) and (max-width: 1024px) {
     .navbar a {
         font-size: 17px;
